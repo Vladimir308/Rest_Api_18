@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class CookiePopup {
     SelenideElement bannerRoot = $(".fc-consent-root");
 
-    public void consentCookiePopup (){
+    public void consentCookiePopup() {
         if (bannerRoot.isDisplayed()) {
             bannerRoot.$(byText("Consent")).click();
         }

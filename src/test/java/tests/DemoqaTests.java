@@ -16,7 +16,7 @@ public class DemoqaTests extends TestBase {
     @Test
     @WithLogin
     @DisplayName("Удаление книги из коллекции пользователя")
-    void DeleteProductFromCollectionTest () {
+    void DeleteProductFromCollectionTest() {
         CookiePopup cookie = new CookiePopup();
         LoginResponse authResponse = step("Авторизуем пользователя", () ->
                 AuthApi.authResponse());

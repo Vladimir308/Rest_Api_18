@@ -1,6 +1,5 @@
 package api;
 
-
 import models.LoginRequest;
 import models.LoginResponse;
 
@@ -10,7 +9,7 @@ import static io.restassured.RestAssured.given;
 import static specs.Specification.*;
 
 public class AuthApi {
-    public static LoginResponse authResponse () {
+    public static LoginResponse authResponse() {
         LoginRequest userData = new LoginRequest();
         userData.setUserName(USER_NAME);
         userData.setPassword(PASSWORD);

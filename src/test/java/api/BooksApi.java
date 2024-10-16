@@ -9,7 +9,7 @@ import static specs.Specification.*;
 
 public class BooksApi {
 
-    public static void deleteBooks (String token, String userId) {
+    public static void deleteBooks(String token, String userId) {
 
         given(request)
                 .header("Authorization", "Bearer " + token)
@@ -21,7 +21,7 @@ public class BooksApi {
                 .spec(successDeleteBooksResponse204);
     }
 
-    public static AddListOfBooksResponse addBooks (String token, String userId) {
+    public static AddListOfBooksResponse addBooks(String token, String userId) {
         ArrayList books = new ArrayList<>();
         books.add(new ListOfIsbns("9781449325862"));
         AddListOfBooksRequest dataBook = new AddListOfBooksRequest();

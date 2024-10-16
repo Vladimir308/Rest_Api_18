@@ -10,4 +10,3 @@ public class AddListOfBooksRequest {
     private List<ListOfIsbns> collectionOfIsbns;
     private String isbn;
 }
-

@@ -1,7 +1,6 @@
 package helpers;
 
 import api.AuthApi;
-import components.CookiePopup;
 import models.LoginResponse;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
@@ -21,6 +20,4 @@ public class SessionExtension implements BeforeEachCallback {
         getWebDriver().manage().addCookie(new Cookie("token", authResponse.getToken()));
 
     }
-
-
 }

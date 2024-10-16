@@ -4,7 +4,6 @@ import org.aeonbits.owner.Config;
 
 import java.net.URL;
 
-
 @Config.Sources("classpath:${env}.properties")
 public interface WebDriverConfig extends Config {
 
