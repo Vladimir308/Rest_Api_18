@@ -8,7 +8,7 @@ import java.net.URL;
 public interface WebDriverConfig extends Config {
 
     @Key("base.url")
-    @DefaultValue("https://demoqa.com/")
+    @DefaultValue("https://demoqa.com")
     String getBaseUrl();
 
     @Key("browser.name")
