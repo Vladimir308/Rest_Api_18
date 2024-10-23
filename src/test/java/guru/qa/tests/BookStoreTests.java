@@ -15,7 +15,7 @@ public class BookStoreTests extends TestBase {
 
     @Test
     @WithLogin
-    @DisplayName("Delete book")
+    @DisplayName("Удаление книги")
     public void deleteBookInProfile() {
         bookApi.deleteAllBook(loginResponse);
         List<IsbnModel> isbnList = new ArrayList<>();
