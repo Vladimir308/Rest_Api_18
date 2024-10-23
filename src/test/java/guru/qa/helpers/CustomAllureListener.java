@@ -1,8 +1,8 @@
-package helpers;
+package guru.qa.helpers;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 
-public class AllureCustomListener {
+public class CustomAllureListener {
     private static final AllureRestAssured FILTER = new AllureRestAssured();
 
     public static AllureRestAssured withCustomTemplates() {
